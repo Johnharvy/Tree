@@ -1,0 +1,50 @@
+
+@common :#64b487;
+@light : #cf5a4c;
+@warn : #f9ce5f;
+@small-width : 2.8 * 1.6rem;
+@small-height : 2.8rem;
+@mid-width : 1.6 * 3.25rem;
+@mid-height : 3.25rem;
+@large-width :  1.6 * 3.85rem;
+@large-height : 3.85rem;
+
+.btn{
+    display: inline-block;
+    text-align:center;
+    border-radius:0.315rem;
+    };
+
+.btn-common{
+    .btn();
+     background : @common;
+}
+
+.btn-light{
+    .btn();
+    background: @light
+}
+
+.btn-warn{
+    .btn();
+    background: @warn
+}
+
+.btn-small{
+    width:@small-width;
+    height:@small-height;
+    line-height:@small-height;
+}
+
+.btn-mid{
+
+    width:@mid-width;
+    height:@mid-height;
+    line-height:@mid-height;
+}
+
+.btn-large{
+    width:@large-width;
+    height:@large-height;
+    line-height:@large-height;
+}
