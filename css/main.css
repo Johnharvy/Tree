@@ -21,6 +21,9 @@ p {
   height: 80px;
   background: #eee;
   color: #eee;
+  text-align: center;
+  display: table;
+  padding: 10px 0 10px 0;
 }
 .btn {
   display: inline-block;
@@ -59,4 +62,29 @@ p {
   width: 6.16rem;
   height: 3.85rem;
   line-height: 3.85rem;
+}
+.Radiobutton {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  background: #fff;
+  position: absolute;
+  top: 0px;
+}
+.radio {
+  border: 1px solid #000;
+  height: 35px;
+  line-height: 35px;
+  position: relative;
+}
+.circle {
+  position: absolute;
+  top: -52%;
+  left: 29.5%;
+  border-radius: 3.25px;
+  width: 6.5px;
+  height: 6.5px;
+  background: #fff;
 }

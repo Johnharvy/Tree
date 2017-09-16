@@ -4,23 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = 'stylesheet' href = "./css/main.css" >
+    <style>
+       .cont span{margin-top:10px;}
+       .l{color:#000;}
+       input[type='radio']{display: none}
+       .radio{border:0px;}
+      
+    </style>
     <title>Document</title>
 </head>
 <body>
     <p>按钮组</p>
-    <div class='cont' style="text-align:center;display:table">
+    <div class='cont'>
+
         <div style="display:table-cell;vertical-align:middle;">
+         <span class='l'> 小号：</span>   
           <span class="btn-common btn-small">按钮</span>
           <span class="btn-light btn-small">按钮</span>
           <span class="btn-warn btn-small">按钮</span>
-        </div>  
-    </div>
+        </div>
 
-    <!-- <p>单选与复选控件</p>
+
+    
+        <div style="display:table-cell;vertical-align:middle;">
+                <span style='color:#000;'> 中号：</span>   
+                 <span class="btn-common btn-mid">按钮</span>
+                 <span class="btn-light btn-mid">按钮</span>
+                 <span class="btn-warn btn-mid">按钮</span>
+        </div> 
+       
+        
+ 
+       <div style="display:table-cell;vertical-align:middle;">
+                <span style='color:#000;'> 大号：</span>   
+                 <span class="btn-common btn-large">按钮</span>
+                 <span class="btn-light btn-large">按钮</span>
+                 <span class="btn-warn btn-large">按钮</span>
+        </div>
+    </div>     
+    
+
+
+    <p>单选与复选控件</p>
     <div class='cont' style="text-align:center;display:table">
             <div style="display:table-cell;vertical-align:middle;">
-              
+                <div class = 'radio' >
+                 <label class='l'>单选 ：</label>
+                 <input name = 'a1' type='radio' value="0"/ style=''>
+                 <span class = 'Radiobutton'>
+                         <span class='circle'></span>
+                 </span>
+                </div> 
+
+                <div class = 'radio'>
+                        <label class='l'>单选 ：</label>
+                        <input name = 'a1' type='radio' value="0"/ style=''>
+                        <span class = 'Radiobutton'>
+                                <span class='circle'></span>
+                        </span>
+                       </div> 
             </div> 
-     </div> -->
+     </div>
+    
+
+<script src= './js/jquery.js'></script>
+
+<script src= './js/tree.js'></script>
+
 </body>
 </html>
