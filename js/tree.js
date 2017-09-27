@@ -5,7 +5,6 @@
 
  //点击单选按钮
  $(".Radiobutton").on("click",function(e){
-     
         var mark = Math.random().toFixed(2) * Math.random().toFixed(14) //标记数
         $(this).css({
             background : "#3b99fc" 
@@ -17,3 +16,10 @@
                radios.eq(i).css({background:"#fff"})
         }
  });
+
+ //点击复选框
+ $("span.checkBtn").on("click",function(e){
+    var _t = $(this), _cbg =  $(this).hasClass("Btn-bg");
+     _t.prev().trigger("click");
+    _cbg ? _t.removeClass("Btn-bg") : _t.addClass("Btn-bg")
+  });

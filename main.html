@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = 'stylesheet' href = "./css/main.css" >
     <style>
+        
        .cont span{margin-top:10px;}
        .l{color:#000;}
-       input[type='radio']{display: none}
+       input[type='radio'],input[type='checkbox']{display: none}
        .radio{border:0px;}
+       
       
     </style>
     <title>Document</title>
@@ -49,20 +51,36 @@
     <div class='cont' style="text-align:center;display:table">
             <div style="display:table-cell;vertical-align:middle;">
                 <div class = 'radio' >
-                 <label class='l'>单选 ：</label>
-                 <input name = 'a1' type='radio' value="0"/ style=''>
+                <label class='l'>单选 ：</label>
+                 <input name = 'a1'  type='radio' value="0"/ >
                  <span class = 'Radiobutton'>
                          <span class='circle'></span>
                  </span>
                 </div> 
 
                 <div class = 'radio'>
-                        <label class='l'>单选 ：</label>
-                        <input name = 'a1' type='radio' value="0"/ style=''>
+                       <label class='l'>单选 ：</label>
+                        <input name = 'a1'   type='radio' value="0"/ >
                         <span class = 'Radiobutton'>
                                 <span class='circle'></span>
                         </span>
-                       </div> 
+                 </div> 
+
+                 <div class = 'checkBox'>
+                     <input type="checkbox" name = 'checkbox1' value='aaaa'／>
+                         <span class = "checkBtn">
+                         </span>
+                         <span style="color : #000;"> 选项1 </span>
+                </div>
+
+                 <div class = 'checkBox'>
+                         <input type="checkbox" name = 'checkbox2' value='bbbb'／> 
+                         <span class= 'checkBtn'>
+                        </span>
+                         <span style="color : #000;"> 选项2 </span>
+                </div>
+
+
             </div> 
      </div>
     
