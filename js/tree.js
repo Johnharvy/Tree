@@ -26,8 +26,25 @@
 
   //写入code
   $(".code-block .show").on("click",function(e){
-    var _t = $(this),_c = _t.parent().prev().html(),_s=_t.next().html();
-    !_s? _t.next().text(_c) : _t.next().text("")
-    !_s? _t.html("合上") : _t.html("展开code")
-    
-})
+    var _t = $(this),_s = _t.next().css("display");
+    !(_s === "none")? _t.next().fadeOut("slow") :  _t.next().fadeIn("slow");
+    _s === "none"? _t.html("合上") : _t.html("展开code")
+});
+
+   (function(){
+       var codes =  $(".code-block .show");
+       for(var i = 0; i < codes.length; i++){
+            var _t = codes.eq(i).parent().prev().html();
+            codes.eq(i).next().text(_t)
+       }
+   })()
+
+//    $(".code-block .show").on("click",function(){
+//           $(this).next().css({
+//               height : "auto"
+//           })
+
+//           $(this).next().animate({height : "auto"},100,function(){
+//               $(this).html("合上")
+//           });
+//    })
