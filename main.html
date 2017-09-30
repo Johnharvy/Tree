@@ -5,83 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = 'stylesheet' href = "./css/main.css" >
     <style>
-        
-       .cont span{margin-top:10px;}
-       .l{color:#000;}
-       input[type='radio'],input[type='checkbox']{display: none}
-       .radio{border:0px;}
-       
+       ul.btns-ul{position : relative;height : auto;clear: both;}
+       ul.btns-ul li{width : 33.3%;height:inherit; float : left;text-align: center;} 
+       .code-block {
+            position : relative;
+            border : 0px solid #000;
+            width  : 100%;
+            color  : #000;
+            height : auto;
+            clear: both;
+            top : 20px;
+        }
+        .show{
+
+        }
+        .codeShow{
+            text-align: left;
+            background: #64b487;
+            color : #fff;
+        }
       
     </style>
-    <title>Document</title>
+    <title>TreeUi</title>
 </head>
 <body>
     <p>按钮组</p>
     <div class='cont'>
+      <div class= "code_cont">
 
-        <div style="display:table-cell;vertical-align:middle;">
-         <span class='l'> 小号：</span>   
-          <span class="btn-common btn-small">按钮</span>
-          <span class="btn-light btn-small">按钮</span>
-          <span class="btn-warn btn-small">按钮</span>
-        </div>
+        <ul class='btns-ul'>
+          <li>    
+            <div class='inner-cont'>
+              <span class='l'> 小号：</span>   
+              <span class="btn-common btn-small">按钮</span>
+              <span class="btn-light btn-small">按钮</span>
+              <span class="btn-warn btn-small">按钮</span>
+            </div>
+          </li>  
+      
 
-
-    
-        <div style="display:table-cell;vertical-align:middle;">
+          <li>
+              <div class='inner-cont'>
                 <span style='color:#000;'> 中号：</span>   
                  <span class="btn-common btn-mid">按钮</span>
                  <span class="btn-light btn-mid">按钮</span>
                  <span class="btn-warn btn-mid">按钮</span>
-        </div> 
-       
+              </div> 
+          </li>
         
- 
-       <div style="display:table-cell;vertical-align:middle;">
+          <li>
+              <div class='inner-cont'>
                 <span style='color:#000;'> 大号：</span>   
                  <span class="btn-common btn-large">按钮</span>
                  <span class="btn-light btn-large">按钮</span>
                  <span class="btn-warn btn-large">按钮</span>
-        </div>
-    </div>     
+            </div>
+          </li>  
+        </ul>   
+     </div>
+    
+
+    <div class='code-block'>
+          <div class='show'>展开code</div>
+          <xmp class="codeShow"></xmp>
+    </div>
+    
+  </div>     
     
 
 
     <p>单选与复选控件</p>
-    <div class='cont' style="text-align:center;display:table">
-            <div style="display:table-cell;vertical-align:middle;">
+    <div class='cont'>
+            <div class="code-cont">
+
+            <div class='inner-cont'>
                 <div class = 'radio' >
-                <label class='l'>单选 ：</label>
-                 <input name = 'a1'  type='radio' value="0"/ >
-                 <span class = 'Radiobutton'>
-                         <span class='circle'></span>
-                 </span>
+                      <label class='l'>单选 ：</label>
+                      <input name = 'a1'  type='radio' value="0" />
+                      <span class = 'Radiobutton'>
+                              <span class='circle'></span>
+                      </span>
                 </div> 
 
                 <div class = 'radio'>
                        <label class='l'>单选 ：</label>
-                        <input name = 'a1'   type='radio' value="0"/ >
+                        <input name = 'a1'   type='radio' value="0" />
                         <span class = 'Radiobutton'>
                                 <span class='circle'></span>
                         </span>
                  </div> 
 
                  <div class = 'checkBox'>
-                     <input type="checkbox" name = 'checkbox1' value='aaaa'／>
+                     <input type="checkbox" name = 'checkbox1' value='aaaa' />
                          <span class = "checkBtn">
                          </span>
                          <span style="color : #000;"> 选项1 </span>
                 </div>
 
                  <div class = 'checkBox'>
-                         <input type="checkbox" name = 'checkbox2' value='bbbb'／> 
+                         <input type="checkbox" name = 'checkbox2' value='bbbb' /> 
                          <span class= 'checkBtn'>
                         </span>
                          <span style="color : #000;"> 选项2 </span>
                 </div>
+           
+          </div> 
 
-
-            </div> 
+          <div class='code-block '>
+              <div class="show">展开code</div>
+              <xmp class="codeShow"></xmp>
+          </div>
      </div>
     
 

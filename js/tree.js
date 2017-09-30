@@ -23,3 +23,11 @@
      _t.prev().trigger("click");
     _cbg ? _t.removeClass("Btn-bg") : _t.addClass("Btn-bg")
   });
+
+  //写入code
+  $(".code-block .show").on("click",function(e){
+    var _t = $(this),_c = _t.parent().prev().html(),_s=_t.next().html();
+    !_s? _t.next().text(_c) : _t.next().text("")
+    !_s? _t.html("合上") : _t.html("展开code")
+    
+})
