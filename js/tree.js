@@ -37,14 +37,10 @@
             var _t = codes.eq(i).parent().prev().html();
             codes.eq(i).next().text(_t)
        }
-   })()
+   })(jQuery,document)
 
-//    $(".code-block .show").on("click",function(){
-//           $(this).next().css({
-//               height : "auto"
-//           })
+   //路由跳转
+   $("#router ul li").on("click",function(){
+           location.href = $(this).attr("go");
+   });
 
-//           $(this).next().animate({height : "auto"},100,function(){
-//               $(this).html("合上")
-//           });
-//    })

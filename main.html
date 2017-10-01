@@ -6,7 +6,15 @@
     <link rel = 'stylesheet' href = "./css/main.css" >
     <style>
        ul.btns-ul{position : relative;height : auto;clear: both;}
-       ul.btns-ul li{width : 33.3%;height:inherit; float : left;text-align: center;} 
+
+       ul.btns-ul li{
+         width : 33.3%;
+         height:inherit; 
+         float : left;
+         text-align: center;
+         list-style: none;
+        } 
+
        .code-block {
             position : relative;
             border : 0px solid #000;
@@ -35,7 +43,21 @@
     <title>TreeUi</title>
 </head>
 <body>
-    <p>按钮组</p>
+
+   <div id = "header">
+         超精简的UI —— TreeUI
+   </div>
+
+   <div id = "router">
+        <ul>
+          <li go = '#buttons'>按钮</li>
+          <li go = '#inputs'>单选／复选</li>
+         
+        </ul>
+   </div>
+
+   <div id = "ui-body">
+    <p id = '#buttons'>按钮组</p>
     <div class='cont'>
       <div class= "code_cont">
 
@@ -80,7 +102,7 @@
     
 
 
-    <p>单选与复选控件</p>
+    <p id="inputs">单选与复选控件</p>
     <div class='cont'>
             <div class="code-cont">
 
@@ -122,7 +144,7 @@
               <xmp class="codeShow"></xmp>
           </div>
      </div>
-    
+    </div>
 
 <script src= './js/jquery.js'></script>
 
