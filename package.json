@@ -10,6 +10,7 @@
         "gulp": "^3.9.1"
     },
     "devDependencies": {
+        "express": "^4.16.1",
         "gulp-less": "^3.3.2",
         "gulp-notify": "^3.0.0",
         "gulp-plumber": "^1.1.0",
