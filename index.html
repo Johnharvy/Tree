@@ -3,43 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = 'stylesheet' href = "./css/main.css" >
-    <style>
-       ul.btns-ul{position : relative;height : auto;clear: both;}
-
-       ul.btns-ul li{
-         width : 33.3%;
-         height:inherit; 
-         float : left;
-         text-align: center;
-         list-style: none;
-        } 
-
-       .code-block {
-            position : relative;
-            border : 0px solid #000;
-            width  : 100%;
-            color  : #000;
-            height : auto;
-            clear: both;
-            top : 20px;
-            margin-bottom: 25px;
-        }
-        .show{
-
-        }
-        .codeShow{
-            text-align: left;
-            background: #64b487;
-            color : #fff;
-            height :auto;
-            display: none;
-            
-         }
-        
-
-      
-    </style>
+    <link rel = 'stylesheet' href = "./css/main.css" />
+    <link rel = 'stylesheet' href = './css/show.css' />
     <title>TreeUi</title>
 </head>
 <body>
@@ -60,36 +25,22 @@
     <p id = '#buttons'>按钮组</p>
     <div class='cont'>
       <div class= "code_cont">
-
-        <ul class='btns-ul'>
-          <li>    
-            <div class='inner-cont'>
-              <span class='l'> 小号：</span>   
-              <span class="btn-common btn-small">按钮</span>
-              <span class="btn-light btn-small">按钮</span>
-              <span class="btn-warn btn-small">按钮</span>
-            </div>
-          </li>  
-      
-
-          <li>
-              <div class='inner-cont'>
-                <span style='color:#000;'> 中号：</span>   
-                 <span class="btn-common btn-mid">按钮</span>
-                 <span class="btn-light btn-mid">按钮</span>
-                 <span class="btn-warn btn-mid">按钮</span>
-              </div> 
-          </li>
-        
-          <li>
-              <div class='inner-cont'>
-                <span style='color:#000;'> 大号：</span>   
-                 <span class="btn-common btn-large">按钮</span>
-                 <span class="btn-light btn-large">按钮</span>
-                 <span class="btn-warn btn-large">按钮</span>
-            </div>
-          </li>  
-        </ul>   
+        <div class='inner-cont'> 
+            <span class="btn-g btn-small">按钮</span>
+            <span class="btn-r btn-small">按钮</span>
+            <span class="btn-o btn-small">按钮</span>
+            <span class="btn-y btn-small">按钮</span>
+            <span class="btn-bg btn-small">按钮</span>
+            <span class="btn-b btn-small">按钮</span>
+            <span class="btn-p btn-small">按钮</span>
+            <span class="btn-g-d btn-small">按钮</span>
+            <span class="btn-r-d btn-small">按钮</span>
+            <span class="btn-o-d btn-small">按钮</span>
+            <span class="btn-y-d btn-small">按钮</span>
+            <span class="btn-bg-d btn-small">按钮</span>
+            <span class="btn-b-d btn-small">按钮</span>
+            <span class="btn-p-d btn-small">按钮</span>
+          </div>
      </div>
     
 
@@ -127,14 +78,14 @@
                      <input type="checkbox" name = 'checkbox1' value='aaaa' />
                          <span class = "checkBtn">
                          </span>
-                         <span style="color : #000;"> 选项1 </span>
+                         <span> 选项1 </span>
                 </div>
 
                  <div class = 'checkBox'>
                          <input type="checkbox" name = 'checkbox2' value='bbbb' /> 
                          <span class= 'checkBtn'>
                         </span>
-                         <span style="color : #000;"> 选项1 </span>
+                         <span> 选项1 </span>
                 </div>
            
           </div> 
@@ -146,6 +97,7 @@
      </div>
     </div>
 
+    <!-- <div class='Test'></div> -->
 <script src= './js/jquery.js'></script>
 
 <script src= './js/tree.js'></script>

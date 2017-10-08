@@ -16,21 +16,6 @@ p {
   padding: 0.315rem 1.25rem;
   color: #cf5a4c;
 }
-.cont {
-  width: 100%;
-  height: auto;
-  background: #eee;
-  color: #eee;
-  text-align: center;
-  display: table;
-  padding: 10px 0 10px 0;
-  position: relative;
-}
-.code-cont {
-  width: inherit;
-  display: table-cell;
-  vertical-align: middle;
-}
 .btn {
   display: inline-block;
   text-align: center;
@@ -46,13 +31,13 @@ p {
   display: inline-block;
   text-align: center;
   border-radius: 0.315rem;
-  background: #cf5a4c;
+  background: #c0392b;
 }
 .btn-warn {
   display: inline-block;
   text-align: center;
   border-radius: 0.315rem;
-  background: #f9ce5f;
+  background: #d35400;
 }
 .btn-small {
   width: 4.48rem;
@@ -69,6 +54,104 @@ p {
   height: 3.85rem;
   line-height: 3.85rem;
 }
+.btn-g {
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.315rem;
+  cursor: pointer;
+  background: #2ecc71;
+}
+.btn-g-d {
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.315rem;
+  cursor: pointer;
+  background: #64b487;
+}
+.btn-r {
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.315rem;
+  cursor: pointer;
+  background: #e74c3c;
+}
+.btn-r-d {
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.315rem;
+  cursor: pointer;
+  background: #c0392b;
+}
+.btn-y {
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.315rem;
+  cursor: pointer;
+  background: #f1c40f;
+}
+.btn-y-d {
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.315rem;
+  cursor: pointer;
+  background: #f39c12;
+}
+.btn-o {
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.315rem;
+  cursor: pointer;
+  background: #e67e22;
+}
+.btn-o-d {
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.315rem;
+  cursor: pointer;
+  background: #d35400;
+}
+.btn-bg {
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.315rem;
+  cursor: pointer;
+  background: #1ABC9C;
+}
+.btn-bg-d {
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.315rem;
+  cursor: pointer;
+  background: #16A085;
+}
+.btn-p {
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.315rem;
+  cursor: pointer;
+  background: #9B59B6;
+}
+.btn-p-d {
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.315rem;
+  cursor: pointer;
+  background: #8E44AD;
+}
+.btn-b {
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.315rem;
+  cursor: pointer;
+  background: #3498DB;
+}
+.btn-b-d {
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.315rem;
+  cursor: pointer;
+  background: #2980B9;
+}
 .Radiobutton {
   display: inline-block;
   width: 13px;
@@ -78,6 +161,7 @@ p {
   background: #fff;
   position: absolute;
   top: 0px;
+  cursor: pointer;
 }
 .radio {
   height: 35px;
@@ -88,7 +172,7 @@ p {
 .circle {
   position: absolute;
   top: -52%;
-  left: 29.5%;
+  left: 29.0%;
   border-radius: 3.25px;
   width: 6.5px;
   height: 6.5px;
@@ -108,6 +192,7 @@ p {
   top: 2px;
   background-position: center;
   background-size: 100% 100%;
+  cursor: pointer;
 }
 .Btn-bg {
   background-image: url("images/cor.jpg");
@@ -137,46 +222,25 @@ input[type='checkbox'] {
   background: #cf5a4c;
   border-radius: 5px;
   color: #fff;
+  cursor: pointer;
 }
-#header {
+.cont {
   width: 100%;
-  height: 158px;
-  background: #64b487;
-  position: absolute;
-  top: 0px;
+  height: auto;
+  background: #eee;
+  color: #eee;
   text-align: center;
-  line-height: 158px;
-  font-size: 3rem;
-  color: #fff;
-}
-#ui-body {
-  position: absolute;
-  top: 160px;
-  right: 0px;
-  width: 78%;
-}
-#router {
+  display: table;
+  padding: 10px 0 10px 0;
   position: relative;
-  width: 22%;
-  height: auto;
-  background: #cf5a4c;
-  left: 0px;
-  top: 160px;
 }
-#router ul {
-  top: 0px;
-  width: 100%;
-  height: auto;
+.code-cont {
+  width: inherit;
+  display: table-cell;
+  vertical-align: middle;
 }
-#router ul li {
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  list-style: none;
-  color: #fff;
-  margin-bottom: 5px;
-}
-#router ul li:hover {
-  background: #a2756f;
+.Test {
+  width: 200px;
+  height: 100px;
+  border: 1px solid ;
 }

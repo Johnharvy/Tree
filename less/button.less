@@ -1,7 +1,6 @@
 
-@common :#64b487;
-@light : #cf5a4c;
-@warn : #f9ce5f;
+@import 'variables.less';
+@import 'mixin.less';
 @small-width : 2.8 * 1.6rem;
 @small-height : 2.8rem;
 @mid-width : 1.6 * 3.25rem;
@@ -17,17 +16,17 @@
 
 .btn-common{
     .btn();
-     background : @common;
+     background : @green-d;
 }
 
 .btn-light{
     .btn();
-    background: @light
+    background: @red-d;
 }
 
 .btn-warn{
     .btn();
-    background: @warn
+    background: @orange-d;
 }
 
 .btn-small{
@@ -48,3 +47,67 @@
     height:@large-height;
     line-height:@large-height;
 }
+
+//
+.btn-g {
+    .renderBackgroundColor(@green)
+} 
+
+.btn-g-d{
+    .renderBackgroundColor(@green-d)
+}
+
+.btn-r{
+    .renderBackgroundColor(@red)
+}
+
+
+.btn-r-d{
+    .renderBackgroundColor(@red-d)
+}
+
+.btn-y{
+    .renderBackgroundColor(@yellow)
+}
+
+.btn-y-d{
+    .renderBackgroundColor(@yellow-d)
+}
+
+.btn-o{
+    .renderBackgroundColor(@orange)
+}
+
+.btn-o-d{
+    .renderBackgroundColor(@orange-d)
+}
+
+.btn-bg{
+    .renderBackgroundColor(@blue-green)
+}
+
+.btn-bg-d{
+    .renderBackgroundColor(@blue-green-d)
+}
+
+.btn-p{
+    .renderBackgroundColor(@purple)
+}
+
+.btn-p-d{
+    .renderBackgroundColor(@purple-d)
+}
+
+.btn-b{
+    .renderBackgroundColor(@blue)
+}
+
+.btn-b-d{
+    .renderBackgroundColor(@blue-d)
+}
+
+
+
+
+
+

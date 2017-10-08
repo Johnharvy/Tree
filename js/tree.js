@@ -3,11 +3,18 @@
  *  version : 0.0.1
  */
 
+ //点击按钮
+ $(".btn-small,.show").hover(function(){
+     $(this).css({opacity : 0.65});
+ }).mouseleave(function(){
+    $(this).css({opacity : 1});
+ });
+
  //点击单选按钮
  $(".Radiobutton").on("click",function(e){
         var mark = Math.random().toFixed(2) * Math.random().toFixed(14) //标记数
         $(this).css({
-            background : "#3b99fc" 
+            background : "#3498DB" 
         }).prev().attr("mark",mark).trigger("click")
         var radios = $(".Radiobutton");
         //这里我用遍历来做，感觉不是很好的处理方式，后面应该再想想

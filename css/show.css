@@ -1,0 +1,80 @@
+#header{
+    width : 100%;
+    height : 158px;
+    background: #64b487;
+    position : absolute;
+    top: 0px;
+    text-align :center;
+    line-height : 158px;
+    font-size : 3rem;
+    color : rgba(187, 255, 260, 1);
+}
+
+#router{
+    position : fixed;
+    width : 17.8%;
+    height : auto;
+    background: #e67e22;
+    left : 0px;
+    top : 160px;
+    opacity : 0.9;
+}
+
+#router ul{
+    top : 0px;
+    width : 100%;
+    height :auto;
+}
+
+#router ul li{
+    width : 100%;
+    height : 50px;
+    text-align : center;
+    line-height : 50px;
+    list-style: none;
+    color :#fff;
+    border-bottom: 1px solid #fff;
+}
+
+#router ul li:hover{
+     background: #a2756f;
+}
+
+#ui-body{
+    position : absolute;
+    top:160px;
+    right:0px;
+    width : 82%;
+}
+
+ul.btns-ul{position : relative;height : auto;clear: both;}
+
+       ul.btns-ul li{
+         width : 33.3%;
+         height:inherit; 
+         float : left;
+         text-align: center;
+         list-style: none;
+        } 
+
+       .code-block {
+            position : relative;
+            border : 0px solid #000;
+            width  : 100%;
+            color  : #000;
+            height : auto;
+            clear: both;
+            top : 20px;
+            margin-bottom: 25px;
+        }
+        .show{
+             cursor: pointer;
+        }
+        .codeShow{
+            text-align: left;
+            background: #64b487;
+            color : #fff;
+            height :auto;
+            display: none;
+            
+         }
