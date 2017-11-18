@@ -7,7 +7,7 @@
  $(".btn-small,.show").hover(function(){
      $(this).css({opacity : 0.65});
  }).mouseleave(function(){
-    $(this).css({opacity : 1});
+    $(this).css({opacity : 1 });
  });
 
  //点击单选按钮
