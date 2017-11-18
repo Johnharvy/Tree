@@ -4,4 +4,3 @@ build/
 dist/
 .idea
 test.html
-app.js
